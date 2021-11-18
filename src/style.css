@@ -1,0 +1,42 @@
+.nav-link{
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+}
+
+.nav-link:hover{
+  color:blue;
+}
+
+body{
+  
+  position:relative;
+}
+
+
+#navbar{
+  flex-basis: 20em;
+  position: fixed;
+  top: 0em;
+  left: 0em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap:5px;
+   grid-template-areas:
+      "header header header"
+      "link1 link3 link5"
+      "link2 link4 link6";
+  justify-items: center;
+}
+
+#header-navbar{
+  grid-area: header;
+}
+
+#main-doc{
+  flex-basis: 50em;
+  position: absolute;
+  left: 0em;
+  top:5em;
+}
